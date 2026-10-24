@@ -1,8 +1,8 @@
 # Nitro Control
 
-Быстрая и лёгкая замена Acer NitroSense для **Acer Nitro 5 AN515-44** (Ryzen 4000 + GTX 1650/1650 Ti).
+Лёгкая и быстрая альтернатива Acer NitroSense для **Acer Nitro 5 AN515-44** (Ryzen 4000 + GTX 1650/1650 Ti): только мониторинг и вентиляторы, зато окно открывается мгновенно и почти не тратит ресурсов. Чего нет по сравнению с NitroSense, описано [ниже](#чего-нет).
 
-*English: a tiny native replacement for Acer NitroSense on the Nitro 5 AN515-44. Fan modes (Auto / Max / Custom), CoolBoost, and a game mode that switches fans and power plan automatically. Opens in ~56 ms, uses ~6 MB of RAM in the background. The UI is in Russian.*
+*English: a lightweight native alternative to Acer NitroSense on the Nitro 5 AN515-44, covering monitoring and fans only (no audio presets or backlight settings). Fan modes (Auto / Max / Custom), CoolBoost, and a game mode that switches fans and power plan automatically. Opens in ~56 ms, uses ~6 MB of RAM in the background. The UI is in Russian.*
 
 <p>
   <img src="assets/screenshot-main.png" width="420" alt="Главный экран">
@@ -12,12 +12,22 @@
 ## Возможности
 
 - **Мониторинг**: температура, загрузка CPU/GPU и обороты обоих вентиляторов.
-- **Режимы вентиляторов**: «Авто» (управляет BIOS), «Максимум», «Вручную» (отдельно для CPU и GPU). Переключение мгновенное, без плавного затухания оборотов.
+- **Режимы вентиляторов**: «Авто» (управляет BIOS), «Максимум», «Вручную» (отдельно для CPU и GPU). Переход с «Максимума» на «Авто» не ждёт минутного плавного сброса оборотов.
 - **CoolBoost** для режима «Авто».
 - **Игровой режим**. Когда видеокарта занята игрой (3D-нагрузка > 50 % дольше 10 с), программа включает максимум вентиляторов и свой план питания «Nitro Control — Игры». Через минуту после выхода из игры она возвращает «Авто» и тот план питания, который был до игры. Видео в браузере игровой режим не включает.
 - **Кнопка NitroSense** на клавиатуре открывает Nitro Control.
 - **Защита**: в ручном режиме при 90 °C на CPU или 85 °C на GPU временно включается максимум. Если служба падает или не может прочитать датчики, вентиляторы возвращаются под управление BIOS.
 - Режимы сохраняются после перезагрузки и сна, автозапуск работает без запроса UAC.
+
+## Чего нет
+
+Здесь только то, чем пользуется автор. Из NitroSense не перенесены:
+
+- **настройки звука**: звуковые профили («Игры», «Кино», «Музыка» и т. п.);
+- **подсветка клавиатуры**: яркость и таймаут;
+- **ручное переключение планов питания** из приложения (игровой режим переключает план сам).
+
+Если вам что-то из этого нужно, пишите в Issues или присылайте PR.
 
 ## Сравнение с NitroSense
 
